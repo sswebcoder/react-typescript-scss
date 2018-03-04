@@ -1,0 +1,52 @@
+{
+  "name": "react-typescript-scss",
+  "version": "0.0.1",
+  "description": "This is a react boilerplate project using TypeScript, Webpack and SCSS",
+  "main": "src/index.tsx",
+  "repository": "https://github.com/sswebcoder/react-typescript-scss.git",
+  "author": "sswebcoder",
+  "license": "MIT",
+  "scripts": {
+    "start": "./node_modules/.bin/webpack-dev-server --progress",
+    "build": "webpack",
+    "test": "jest"
+  },
+  "jest": {
+    "transform": {
+      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/lib/"
+    ],
+    "testRegex": "(src/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json"
+    ]
+  },
+  "devDependencies": {
+    "@types/jest": "^22.1.4",
+    "@types/react": "^16.0.40",
+    "@types/react-dom": "^16.0.4",
+    "css-loader": "^0.28.10",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "jest": "^22.4.2",
+    "node-sass": "^4.7.2",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "sass-loader": "^6.0.6",
+    "source-map-loader": "^0.2.1",
+    "style-loader": "^0.20.2",
+    "ts-jest": "^22.4.1",
+    "ts-loader": "^4.0.0",
+    "typescript": "^2.7.2",
+    "typings": "^2.1.0",
+    "webpack": "^4.0.1",
+    "webpack-cli": "^2.0.10",
+    "webpack-dev-server": "^3.1.0"
+  },
+  "dependencies": {}
+}
