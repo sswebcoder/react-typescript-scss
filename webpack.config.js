@@ -32,12 +32,10 @@ const config = {
                 fallback: 'style-loader',
                 use: [
                     {
-                        loader: 'css-loader',
+                        loader: 'typings-for-css-modules-loader',
                         options: {
                             modules: true,
-                            sourceMap: true,
-                            importLoaders: 2,
-                            localIndentName: '[name]__[local]__[hash:base64:5]'
+                            namedExport: true
                         }
                     },
                     'sass-loader'
